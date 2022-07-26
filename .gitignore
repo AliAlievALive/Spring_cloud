@@ -44,3 +44,5 @@ build/
 /guest-services/mvnw.cmd
 /config-server/mvnw.cmd
 /config-server/mvnw
+/guest-services/.mvn/wrapper/maven-wrapper.jar
+/guest-services/.mvn/wrapper/maven-wrapper.properties
