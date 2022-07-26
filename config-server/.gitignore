@@ -31,16 +31,3 @@ build/
 
 ### VS Code ###
 .vscode/
-/.mvn/
-/mvnw.cmd
-/mvnw
-/.m2/
-/dbdata/
-/reservation-services/mvnw
-/reservation-services/mvnw.cmd
-/room-services/mvnw
-/room-services/mvnw.cmd
-/guest-services/mvnw
-/guest-services/mvnw.cmd
-/config-server/mvnw.cmd
-/config-server/mvnw
