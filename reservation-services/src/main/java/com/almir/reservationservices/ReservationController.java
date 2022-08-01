@@ -1,10 +1,9 @@
 package com.almir.reservationservices;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.sql.Date;
 
 @RestController
 @RequestMapping("/reservations")
@@ -17,7 +16,10 @@ public class ReservationController {
     }
 
     @GetMapping
-    public Iterable<Reservation> getAllReservations() {
+    public Iterable<Reservation> getReservationsByDate(@RequestParam(name = "date", required = false) Date date) {
+        if (date != null) {
+            return repository.findAllByDate(date);
+        }
         return repository.findAll();
     }
 
